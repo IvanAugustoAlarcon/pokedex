@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Pokeball.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokedex</title>
+</head>
+<body>
+    <main class="pokedex">
+        <div class="left-container">
+            <div class="left-container__top-section">
+                <div class="top-section__blue"></div>
+                <div class="top-section__small-buttons">
+                  <div class="top-section__red"></div>
+                  <div class="top-section__yellow"></div>
+                  <div class="top-section__green"></div>
+                </div>
+            </div>
+            <div class="left-container__main-section-container">
+                <div class="left-container__main-section">
+                    <div class="main-section__white">
+                        <div data-poke-img-container class="main-section__black">
+                            <div class="main-screen">
+                                <div class="screen__header">
+                                    <div data-poke-name ></div>
+                                    <div data-poke-id ></div>
+                                </div>
+                                <div class="img-container">
+                                    <img data-poke-img class="poke-img">
+                                </div>
+                                <div data-poke-types class="types-poke"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <form onsubmit="searchPokemon(event)">
+                        <input type="text" name="pokemon" autocomplete="off" placeholder="Pokemon" id="poke-input">
+                    </form> 
+                </div>
+                <div class="left-container__right">
+                    <div class="left-container__hinge"></div>
+                    <div class="left-container__hinge"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="right-container">
+            <div class="right-container__black">
+                <div class="right-container__screen">
+                    <div data-poke-stats class="stats-poke"></div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

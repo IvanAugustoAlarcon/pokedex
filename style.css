@@ -1,0 +1,195 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5% /*% de 16 = 10px*/
+}
+body {
+  display: flex;
+  font-family: sans-serif;
+  justify-content: center;
+}
+.pokedex {
+  align-items: flex-end;
+  display: flex;
+  height: 55rem;
+  margin: 5rem;
+  width: 75rem;
+}
+.left-container,
+.right-container{
+  border: 3px solid black;
+  width: 50%;
+}
+.left-container{
+  background: #E71D23;
+  height: 100%;
+  width: calc(50% + 5rem);
+}
+.right-container {
+  border-left: none;
+}
+.left-container__top-section{
+  border-bottom: 0.3rem solid black;
+  display: flex;
+  height: 5rem;
+  padding: 0.8rem;
+}
+.top-section__blue{
+  background: radial-gradient(farthest-corner at 1rem 1rem, white, #369CD4, #369CD4);
+  border-radius: 50%;
+  border: 0.2rem solid white;
+  box-shadow: 0 0 0.2rem 0.2rem rgba(0,0,0,.5);
+  height: 3rem;
+  width: 3rem;
+} 
+.top-section__small-buttons{
+  display: flex;
+  margin: 0 2.5rem;
+}
+.top-section__red,
+.top-section__yellow,
+.top-section__green{
+  border-radius: 50%;
+  border: 0.1rem solid black;
+  height: 1rem;
+  margin-right: 0.5rem;
+  width: 1rem;
+}
+.top-section__red {
+  background: #7F100F;
+}
+.top-section__yellow {
+  background: #EDF18E;
+}
+.top-section__green {
+  background: #33915A;
+}
+.left-container__main-section-container{
+  display: flex;
+  height: calc(100% - 5rem);
+}
+.left-container__main-section{
+  height: 100%;
+  padding: 2.5rem;
+  width: 50rem;
+}
+.main-section__white{
+  background: #DEDEDE;
+  border: 0.3rem solid black;
+  box-shadow: inset 0 0 0.3rem 0.3rem rgba(0,0,0,.3);
+  height: 35rem;
+  margin-top: 2rem;
+}
+.main-section__black{
+  background: #000;
+  height: calc(100% - 5rem);
+  margin: 2.5rem;
+  padding: 1rem;
+  width: calc(100% - 5rem);
+} 
+.main-screen {
+  border-radius: 1.5rem;
+  height: 100%;
+  padding: 1.5rem;
+}
+
+.screen__header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.img-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.poke-img {
+  border:none;
+  
+  
+}
+
+.types-poke div{
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 0.4rem;
+  border: 0.1rem dashed #fff;
+  font-size: 1.5rem;
+  text-align:center;
+}
+
+form {
+  width: 20rem;
+  margin: 2rem auto;
+}
+
+input {
+  width: 100%;
+  padding: 1rem;
+}
+
+
+/* Divicion*/
+.left-container__right{
+  border-left: 0.3rem solid black;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  width: 5rem;
+}
+.left-container__hinge{
+  background: linear-gradient(to right, #7F100F, #E71D23, #E71D23, #7F100F);
+  height: 7.5rem;
+  width: 100%;
+}
+.left-container__hinge:first-child{
+  border-bottom: 0.3rem solid black;
+}
+.left-container__hinge:last-child{
+  border-top: 0.3rem solid black;
+}
+
+/*Right*/
+
+.right-container {
+  background: #E71D23;
+  height: calc(100% - 5rem);
+  padding: 2.5rem;
+  width: calc(50% - 5rem);
+}
+
+.right-container__black {
+  background: black;
+  box-shadow: 0 0 0.2rem 0.2rem rgba(0,0,0,.3);
+  height: 40rem;
+  padding: 1rem;
+  margin-top: 2.5rem;
+}
+
+.right-container__screen {
+  background: #43B0F2;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+  padding: 1.5rem 1.5rem 0;
+}
+
+.stats-poke div {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  padding: 0.5rem;
+  font-size: 1.8rem;
+  margin-top: 0.7rem;
+}
